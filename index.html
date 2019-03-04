@@ -56,13 +56,13 @@
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="rideDay.html"><!--change once page is built -->
           <i class="fa fa-edit"></i>
           <span>Review / Edit Strategy</span></a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="rideDay.html">
           <i class="fas fa-car-side"></i>
           <span>Ride Day</span></a>
       </li>
@@ -322,73 +322,127 @@
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
+
           <!-- Content Row -->
           <div class="row">
 
-            <!-- Earnings (Monthly) Card Example -->
-
-
-            <!-- Earnings (Monthly) Card Example -->
-
-
-            <!-- Earnings (Monthly) Card Example -->
-
-
-            <!-- Pending Requests Card Example -->
-
-          </div>
-
-          <!-- Content Row -->
-
-          <div class="row">
-
-            <!-- Area Chart -->
-
+            <!-- Donut Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
-
-
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Strategy Goal Trend</h6>
+                </div>
                 <!-- Card Body -->
-
-
-
-            <!-- Pie Chart -->
-
-                <!-- Card Header - Dropdown -->
-
-                <!-- Card Body -->
-
-
-          </div>
-
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- Content Column -->
-
-
-              <!-- Project Card Example -->
-
-
-              <!-- Color System -->
-
-
+                <div class="card-body">
+                  <div class="chart-pie pt-4">
+                    <canvas id="myPieChart"></canvas>
+                  </div>
+                  <hr>
+                  Visual display of goal types being used for strategy’s.
+                </div>
+              </div>
             </div>
-
-            <div class="col-lg-6 mb-4">
-
-              <!-- Illustrations -->
-
-
-
-              <!-- Approach -->
-
-
+            <div class="card mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Initiative Distribution</h6>
+              </div>
+              <div class="card-body">
+                <div class="mb-1 small">Regional/ National Initiative </div>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="mb-1 small">District Initiative</div>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="mb-1 small">Area Manager Initiative</div>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <hr>
+                Visual display of how initiatives are being distributed<br>
+                The example shows how much coaches are being<br> utilized based on the initiatives being pushed.
+              </div>
             </div>
           </div>
 
+          <!-- Content Row -->
+          <div class="row">
+
+            <div class="col-xl-8 col-lg-7">
+
+              <!-- Bar Chart -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Metric Goal Trends</h6>
+                </div>
+                <div class="card-body">
+                  <div class="chart-bar">
+                    <canvas id="myBarChart"></canvas>
+                  </div>
+                  <hr>
+                  Visual display of metric goal trends.<br> The example shows the top 3 goals used in strategys and there current progress.
+                </div>
+              </div>
+              <!-- Progress Small -->
+
+
+            </div>
+            <!-- DataTales Example -->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Coach Summary</h6>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>Manager</th>
+                        <th>Total Strategys</th>
+                        <th>Total Strategys Completed</th>
+                        <th>Total Strategys Incomplete</th>
+                        <th>Total Individual Ride Days</th>
+                        <th>Total Team Training Sessions</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>Manager A</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>Manager B</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>12</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>Manager C</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>30</td>
+                        <td>6</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.container-fluid -->
+          </div>
         </div>
-        <!-- /.container-fluid -->
-
       </div>
       <!-- End of Main Content -->
 
@@ -448,6 +502,7 @@
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="js/demo/chart-bar-demo.js"></script>
 
 </body>
 
