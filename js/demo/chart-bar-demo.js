@@ -63,7 +63,7 @@ var myBarChart = new Chart(ctx, {
         ticks: {
           maxTicksLimit: 6
         },
-        maxBarThickness: 50,
+        maxBarThickness: 25,
       }],
       yAxes: [{
         ticks: {
