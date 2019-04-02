@@ -316,11 +316,190 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <div class="text-center">
-            <div class="error mx-auto" data-text="404">404</div>
-            <p class="lead text-gray-800 mb-5">Page Not Found</p>
-            <p class="text-gray-500 mb-0">This page is currently under construction... </p>
-            <a href="index.html">&larr; Back to home</a>
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Ride Day</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Ride Day</h6>
+              </div>
+              <div class="card-body">
+
+            <!-- Basic Card Example -->
+            <div class="card shadow mb-4">
+              <div class="btnGroup">
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Step 1. Select a Manager and enter Date<br>select yes or no if manager has a current<br>open Strategy</h6>
+
+              </div>
+
+              <div class="dropdown no-arrow mb-4 ml-4 mt-4 mr-4">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Manager list
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Manager A</a>
+                  <a class="dropdown-item" href="#">Manager B</a>
+                  <a class="dropdown-item" href="#">Manager C</a>
+                </div>
+
+              </div>
+              <div class="dropdown no-arrow mb-4 ml-4 mt-4 mr-2">
+
+                <form action="/action_page.php">
+                  Date:
+                  <input type="date" name="bday">
+                </form>
+
+
+              </div>
+              <div class="dropdown no-arrow mb-4 ml-4 mt-4 mr-4 ">
+                <div class="form-group">
+                  <label for="sel1">Open Strategy:</label>
+                  <select class="form-control" id="sel1">
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+
+
+              <!-- Add text to bottom of card -->
+              </div>
+
+              <!-- Dropdown Card Example -->
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="btnGroup">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Step 2. Select Ride Day Coverage, enter<br>initiative type, and enter reason for coverage.</h6>
+
+                </div>
+                <div class="dropdown no-arrow mb-4 ml-4 mt-4 mr-4 float-left">
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Coverage
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">--Metric--</a>
+                    <a class="dropdown-item" href="#">AIQ</a>
+                    <a class="dropdown-item" href="#">AirTie-Smart Extender Billing</a>
+                    <a class="dropdown-item" href="#">Available Time Not Dispatched</a>
+                    <a class="dropdown-item" href="#">Billing</a>
+                    <a class="dropdown-item" href="#">Dispatch Efficiency</a>
+                    <a class="dropdown-item" href="#">Exception Hours</a>
+                    <a class="dropdown-item" href="#">Helper Rate</a>
+                    <a class="dropdown-item" href="#">HPC</a>
+                    <a class="dropdown-item" href="#">LSBBT</a>
+                    <a class="dropdown-item" href="#">Motor Vehicle Accidents-MVA</a>
+                    <a class="dropdown-item" href="#">Pair Change</a>
+                    <a class="dropdown-item" href="#">Personal Injury Accidents-PIA</a>
+                    <a class="dropdown-item" href="#">Productivity</a>
+                    <a class="dropdown-item" href="#">SIN 30</a>
+                    <a class="dropdown-item" href="#">Time Validation</a>
+                    <a class="dropdown-item" href="#">Upfront Usage</a>
+                    <a class="dropdown-item" href="#">VOC</a>
+                    <a class="dropdown-item" href="#">WiFi Suite of Tools - Upload</a>
+                    <a class="dropdown-item" href="#">WiFi Suite of Tools - Pen Rate</a>
+                    <a class="dropdown-item" href="#">--Administrative--</a>
+                    <a class="dropdown-item" href="#">Coaching Discussions</a>
+                    <a class="dropdown-item" href="#">Crew Meetings</a>
+                    <a class="dropdown-item" href="#">Disciplinary</a>
+                    <a class="dropdown-item" href="#">EOY Appraisal</a>
+                    <a class="dropdown-item" href="#">Grammer</a>
+                    <a class="dropdown-item" href="#">MAS</a>
+                    <a class="dropdown-item" href="#">Other-Please specify</a>
+                    <a class="dropdown-item" href="#">Quality observations<</a>
+                    <a class="dropdown-item" href="#">R.I.D.E.</a>
+                    <a class="dropdown-item" href="#">Safety Meetings</a>
+                    <a class="dropdown-item" href="#">Safety Observations</a>
+                    <a class="dropdown-item" href="#">Scheduling</a>
+                    <a class="dropdown-item" href="#">Time Approval</a>
+                    <a class="dropdown-item" href="#">--Soft Skill--</a>
+                    <a class="dropdown-item" href="#">Coaching Discussions</a>
+                    <a class="dropdown-item" href="#">Crew Meetings</a>
+                    <a class="dropdown-item" href="#">Disciplinary</a>
+                    <a class="dropdown-item" href="#">EOY Appraisal</a>
+                    <a class="dropdown-item" href="#">Grammer</a>
+                    <a class="dropdown-item" href="#">MAS</a>
+                    <a class="dropdown-item" href="#">Other-Please specify</a>
+                    <a class="dropdown-item" href="#">Quality observations<</a>
+                    <a class="dropdown-item" href="#">R.I.D.E.</a>
+                    <a class="dropdown-item" href="#">Safety Meetings</a>
+                    <a class="dropdown-item" href="#">Safety Observations</a>
+                    <a class="dropdown-item" href="#">Scheduling</a>
+                    <a class="dropdown-item" href="#">Time Approval</a>
+                  </div>
+                </div>
+                <div class="dropdown no-arrow mb-4 ml-2 mt-4 mr-2 float-left">
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Initiative
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Regional/ National</a>
+                    <a class="dropdown-item" href="#">District</a>
+                    <a class="dropdown-item" href="#">Area Manager</a>
+                  </div>
+                </div>
+
+              </div>
+                <div class="dropdown no-arrow mb-4 ml-4">
+
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-10">
+                        <label for="comment">Reason for Coverage:</label>
+                        <textarea class="form-control" rows="4" id="comment"></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              </div>
+              <!-- Basic Card Example -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Step 3. Select if follow up is required, enter<br>date for follow up and enter a reason.</h6>
+                </div>
+                <div class="card-body">
+                  <div class="my-2"></div>
+                  <div class="form-group">
+                    <label for="sel1">Follow up required:</label>
+                    <select class="form-control" id="sel1">
+                      <option>Yes</option>
+                      <option>No</option>
+                    </select>
+                  </div>
+                  <div class="dropdown no-arrow mb-4 ml-2 mt-4 mr-2">
+
+                    <form action="/action_page.php">
+                      Follow up Date:<br>
+                      <input type="date" name="bday">
+                    </form>
+
+
+                  </div>
+                  <div class="col-10">
+                    <label for="comment">Reason for Follow Up:</label>
+                    <textarea class="form-control" rows="4" id="comment"></textarea>
+                  </div>
+                </div>
+                <!-- Add text to bottom of card -->
+                </div>
+            </div>
+            <div class="my-2 mb-2 ml-4 mt-2 mr-4">
+              <a href="#" class="btn btn-danger btn-icon-split">
+                <span class="text">Step 4. Submit Ride Day</span>
+              </a>
+            </div>
+          </div>
+
           </div>
 
         </div>
