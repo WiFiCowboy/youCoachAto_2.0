@@ -324,7 +324,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Create Strategy</h1>
+            <h1 class="h3 mb-0 text-gray-800">Training</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
@@ -332,37 +332,48 @@
           <div class="row">
             <div class="card shadow mb-4">
               <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Strategy</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Training</h6>
               </div>
               <div class="card-body">
 
             <!-- Basic Card Example -->
             <div class="card shadow mb-4">
-              <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Step 1. Select a manager and strategy length</h6>
+              <div class="btnGroup">
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Step 1. Select a Manager or Area Manager<br>group and enter date.</h6>
+
               </div>
-              <div class="card-body">
-                <div class="dropdown no-arrow mb-4 ml-4 mt-4 float-left">
-                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Manager List
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Manager A</a>
-                    <a class="dropdown-item" href="#">Manager B</a>
-                    <a class="dropdown-item" href="#">Manager C</a>
-                  </div>
-                </div>
-                <div class="dropdown no-arrow mb-4 ml-4 mt-4 float-left">
-                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Strategy Length
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">30 Day</a>
-                    <a class="dropdown-item" href="#">60 Day</a>
-                    <a class="dropdown-item" href="#">90 Day</a>
-                  </div>
+
+              <div class="dropdown no-arrow mb-4 ml-4 mt-4 mr-4">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Manager list
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Manager A</a>
+                  <a class="dropdown-item" href="#">Manager B</a>
+                  <a class="dropdown-item" href="#">Manager C</a>
                 </div>
               </div>
+              <div class="dropdown no-arrow mb-4 ml-4 mt-4 mr-4">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Area Manager group list
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Area Manager A</a>
+                <a class="dropdown-item" href="#">Area Manager B</a>
+                <a class="dropdown-item" href="#">Area Manager C</a>
+              </div>
+            </div>
+              <div class="dropdown no-arrow mb-4 ml-4 mt-4 mr-2">
+
+                <form action="/action_page.php">
+                  Date:
+                  <input type="date" name="bday">
+                </form>
+              </div>
+            </div>
+
+
               <!-- Add text to bottom of card -->
               </div>
 
@@ -371,14 +382,15 @@
                 <!-- Card Header - Dropdown -->
                 <div class="btnGroup">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Step 2. Select goal and enter value<br>Enter diagnosis and solution</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Step 2. Select training Coverage, enter<br>initiative type, and enter reason for coverage.</h6>
 
                 </div>
                 <div class="dropdown no-arrow mb-4 ml-4 mt-4 mr-4 float-left">
                   <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Metric
+                    Coverage
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">--Metric--</a>
                     <a class="dropdown-item" href="#">AIQ</a>
                     <a class="dropdown-item" href="#">AirTie-Smart Extender Billing</a>
                     <a class="dropdown-item" href="#">Available Time Not Dispatched</a>
@@ -398,13 +410,21 @@
                     <a class="dropdown-item" href="#">VOC</a>
                     <a class="dropdown-item" href="#">WiFi Suite of Tools - Upload</a>
                     <a class="dropdown-item" href="#">WiFi Suite of Tools - Pen Rate</a>
-                  </div>
-                </div>
-                <div class="dropdown no-arrow mb-4 ml-2 mt-4 mr-2 float-left">
-                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Administrative
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">--Administrative--</a>
+                    <a class="dropdown-item" href="#">Coaching Discussions</a>
+                    <a class="dropdown-item" href="#">Crew Meetings</a>
+                    <a class="dropdown-item" href="#">Disciplinary</a>
+                    <a class="dropdown-item" href="#">EOY Appraisal</a>
+                    <a class="dropdown-item" href="#">Grammer</a>
+                    <a class="dropdown-item" href="#">MAS</a>
+                    <a class="dropdown-item" href="#">Other-Please specify</a>
+                    <a class="dropdown-item" href="#">Quality observations<</a>
+                    <a class="dropdown-item" href="#">R.I.D.E.</a>
+                    <a class="dropdown-item" href="#">Safety Meetings</a>
+                    <a class="dropdown-item" href="#">Safety Observations</a>
+                    <a class="dropdown-item" href="#">Scheduling</a>
+                    <a class="dropdown-item" href="#">Time Approval</a>
+                    <a class="dropdown-item" href="#">--Soft Skill--</a>
                     <a class="dropdown-item" href="#">Coaching Discussions</a>
                     <a class="dropdown-item" href="#">Crew Meetings</a>
                     <a class="dropdown-item" href="#">Disciplinary</a>
@@ -420,48 +440,24 @@
                     <a class="dropdown-item" href="#">Time Approval</a>
                   </div>
                 </div>
-                <div class="dropdown no-arrow mb-4 ml-4 mt-4 mr-4 float-left">
+                <div class="dropdown no-arrow mb-4 ml-2 mt-4 mr-2 float-left">
                   <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Soft Skill
+                    Initiative
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Adaptability</a>
-                    <a class="dropdown-item" href="#">Communication</a>
-                    <a class="dropdown-item" href="#">Creativity</a>
-                    <a class="dropdown-item" href="#">Critical Thinking</a>
-                    <a class="dropdown-item" href="#">Interpersonal Communication</a>
-                    <a class="dropdown-item" href="#">Organization</a>
-                    <a class="dropdown-item" href="#">Other-Please specify</a>
-                    <a class="dropdown-item" href="#">Problem Solving</a>
-                    <a class="dropdown-item" href="#">Punctuality</a>
-                    <a class="dropdown-item" href="#">Teamwork Skills</a>
-                    <a class="dropdown-item" href="#">Time Management</a>
+                    <a class="dropdown-item" href="#">Regional/ National</a>
+                    <a class="dropdown-item" href="#">District</a>
+                    <a class="dropdown-item" href="#">Area Manager</a>
                   </div>
                 </div>
+
               </div>
                 <div class="dropdown no-arrow mb-4 ml-4">
 
-                  <div class="my-2"></div>
-                  <form class="user">
-                    <div class="form-group row">
-                      <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='Enter Goal Value'>
-                      </div>
-                    </div>
-                  </form>
-
-                  <!--Use for spacing-->
-                  <!--<div class="my-2"></div>-->
                   <div class="form-group">
                     <div class="row">
                       <div class="col-10">
-                        <label for="comment">Diagnosis:</label>
-                        <textarea class="form-control" rows="4" id="comment"></textarea>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-10">
-                        <label for="comment">Solution:</label>
+                        <label for="comment">Reason for Coverage:</label>
                         <textarea class="form-control" rows="4" id="comment"></textarea>
                       </div>
                     </div>
@@ -472,89 +468,37 @@
               <!-- Basic Card Example -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Step 3. Enter behaviors for goal solution <br>and if applicable enter quantity</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Step 3. Select if follow up is required, enter<br>date for follow up and enter a reason.</h6>
                 </div>
                 <div class="card-body">
                   <div class="my-2"></div>
-                  <form class="user">
-                    <div class="form-group row">
-                      <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='Enter Behavior'>
-                      </div>
-                      <div class="col-sm-3 mb-3 mb-sm-0">
-                        <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='QTY'>
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='Enter Behavior'>
-                      </div>
-                      <div class="col-sm-3 mb-3 mb-sm-0">
-                        <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='QTY'>
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='Enter Behavior'>
-                      </div>
-                      <div class="col-sm-3 mb-3 mb-sm-0">
-                        <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='QTY'>
-                      </div>
-                    </div>
-                  </form>
-                  <div class="my-2">
-                    <a href="#" class="btn btn-success btn-icon-split">
-                      <span class="text">Step 4. Submit Goal and Behaviors</span>
-                    </a>
+                  <div class="form-group">
+                    <label for="sel1">Follow up required:</label>
+                    <select class="form-control" id="sel1">
+                      <option>Yes</option>
+                      <option>No</option>
+                    </select>
                   </div>
+                  <div class="dropdown no-arrow mb-4 ml-2 mt-4 mr-2">
 
-                </div>
-                <!-- Add text to bottom of card -->
-                </div>
-                <!-- Basic Card Example -->
-                <div class="card shadow mb-4">
-                  <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Submitted Goals<br>Examples</h6>
-                  </div>
-                  <div class="card-body">
-                    <div class="my-2"></div>
-                    <form class="user">
-                      <div class="form-group row">
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                          <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='Metric'>
-                        </div>
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                          <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='Productivity'>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                          <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='Administrative'>
-                        </div>
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                          <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='Time Approval'>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                          <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='Soft Skill'>
-                        </div>
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                          <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder='Teamwork Skills'>
-                        </div>
-                      </div>
+                    <form action="/action_page.php">
+                      Follow up Date:<br>
+                      <input type="date" name="bday">
                     </form>
 
 
                   </div>
-                  <!-- Add text to bottom of card -->
+                  <div class="col-10">
+                    <label for="comment">Reason for Follow Up:</label>
+                    <textarea class="form-control" rows="4" id="comment"></textarea>
                   </div>
-                <!-- Card Body -->
-
+                </div>
+                <!-- Add text to bottom of card -->
+                </div>
             </div>
             <div class="my-2 mb-2 ml-4 mt-2 mr-4">
               <a href="#" class="btn btn-danger btn-icon-split">
-                <span class="text">Step 5. Submit Strategy</span>
+                <span class="text">Step 4. Submit Training</span>
               </a>
             </div>
           </div>
